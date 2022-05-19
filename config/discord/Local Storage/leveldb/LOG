@@ -1,0 +1,5 @@
+2022/05/07-16:26:28.704 63ae Creating DB /home/fatmeat/.config/discord/Local Storage/leveldb since it was missing.
+2022/05/07-16:26:28.743 63ae Reusing MANIFEST /home/fatmeat/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2022/05/07-16:30:17.663 63ae Level-0 table #5: started
+2022/05/07-16:30:17.824 63ae Level-0 table #5: 407972 bytes OK
+2022/05/07-16:30:17.872 63ae Delete type=0 #3

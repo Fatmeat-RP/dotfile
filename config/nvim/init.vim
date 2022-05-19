@@ -1,7 +1,15 @@
+if (has("nvim"))
+    "For Neovim 0.1.3 and 0.1.4 < https://github.com/neovim/neovim/pull/2198 >
+    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+endif
+if (has("termguicolors"))
+    set termguicolors
+endif
+
 set	nocompatible
 set	showmatch 
+set clipboard=unnamedplus
 set	ignorecase 
-set	mouse=v 
 set	hlsearch 
 set	incsearch
 set	tabstop=4 
@@ -14,16 +22,25 @@ set	wildmode=longest,list	" get bash-like ta completions
 set	cc=80
 "filetype	plugin indent on
 syntax	on
-set	mouse=a
-set	clipboard=unnamedplus	" using system clipboard
+function! ToggleMouse()
+    " check if mouse is enabled
+    if &mouse == 'a'
+        " disable mouse
+        set mouse=r
+    else
+        " enable mouse everywhere
+        set mouse=a
+    endif
+endfunc
+set mouse=r
 filetype plugin on
 set	cursorline
 set	ttyfast
 set	noswapfile
 set	backupdir=~/.cache/vim
-colorscheme neon
-let	g:airline_theme='airline-neon'
-set	bg=light
+colorscheme onedark
+let g:airline_theme='onedark'
+hi Normal guibg=NONE ctermbg=NONE
 
 augroup nerdtree_open
     autocmd!
@@ -58,10 +75,11 @@ Plug	'frazrepo/vim-rainbow'
 Plug	'Xuyuanp/nerdtree-git-plugin'
 Plug	'ryanoasis/vim-devicons'
 Plug	'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug	'scrooloose/nerdtree-project-plugin'
 Plug	'PhilRunninger/nerdtree-buffer-ops'
 Plug	'PhilRunninger/nerdtree-visual-selection'
 Plug	'danielsaul/neon.vim'
 Plug	'terryma/vim-multiple-cursors'
+Plug    'sheerun/vim-polyglot'
+Plug    'joshdick/onedark.vim'
 
 call	plug#end()

@@ -97,11 +97,6 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zconf="nvim ~/.zshrc"
-alias gcl="git clone"
-alias gadd="git add *"
-alias gcom="git commit -m"
-alias gpom="git push -u origin master"
-alias gpush="git push -u"
+alias runobs="obs -platform xcb & disown"
+alias zshconf="nvim ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias nvim="/Users/acarle-m/Documents/nvim-osx64/bin/nvim"

@@ -1,0 +1,19 @@
+[General]
+Version=201
+ViewPropsTimestamp=2022,5,18,17,3,31.836
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+
+[KPropertiesDialog]
+DisplayPort-0 Height 3440x1440=420
+DisplayPort-0 Width 3440x1440=395
+
+[MainWindow]
+DisplayPort-0 Height 3440x1440=1415
+DisplayPort-0 Width 3440x1440=3440
+DisplayPort-0 XPosition 3440x1440=0
+DisplayPort-0 YPosition 3440x1440=25
+MenuBar=Disabled
+ToolBarsMovable=Disabled
