@@ -1,8 +1,26 @@
+Extension "Formula (pdflatex)" failed to load because a dependency was not met.
+Dependency:
+	type: executable
+	location: path
+	string: pdflatex
+
+Extension "XFIG Input" failed to load because a dependency was not met.
+Dependency:
+	type: executable
+	location: path
+	string: fig2dev
+
 Extension "EPS Input" failed to load because a dependency was not met.
 Dependency:
 	type: executable
 	location: path
 	string: ps2pdf
+
+Extension "GIMP XCF" failed to load because a dependency was not met.
+Dependency:
+	type: executable
+	location: path
+	string: gimp
 
 Extension "PostScript Input" failed to load because a dependency was not met.
 Dependency:
@@ -15,22 +33,4 @@ Dependency:
 	type: executable
 	location: path
 	string: scribus
-
-Extension "GIMP XCF" failed to load because a dependency was not met.
-Dependency:
-	type: executable
-	location: path
-	string: gimp
-
-Extension "LaTeX (pdflatex)" failed to load because a dependency was not met.
-Dependency:
-	type: executable
-	location: path
-	string: pdflatex
-
-Extension "XFIG Input" failed to load because a dependency was not met.
-Dependency:
-	type: executable
-	location: path
-	string: fig2dev
 
